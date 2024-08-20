@@ -29,6 +29,24 @@
             margin: 20px 0;
         }
 
+        /* Image Container */
+        .image-container {
+            position: relative;
+            text-align: center;
+            color: white;
+        }
+
+        /* Centered Heading */
+        .centered-heading {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            border-radius: 10px;
+        }
+
         /* Sticky Navigation Bar */
         .sticky-nav {
             position: sticky;
@@ -44,10 +62,9 @@
         img {
             transition: transform 0.3s ease, box-shadow 0.3s ease;
             width: 100%;
-            max-width: 600px;
-            margin: 20px auto;
+            max-width: 100%;
+            margin: 0 auto;
             display: block;
-            border-radius: 10px;
         }
 
         img:hover {
@@ -73,8 +90,9 @@
                 font-size: 18px;
             }
 
-            img {
-                width: 90%;
+            .centered-heading {
+                font-size: 18px;
+                padding: 10px;
             }
         }
     </style>
@@ -87,14 +105,17 @@
         Avenue Fashion
     </div>
 
-    <!-- Content Section -->
-    <section class="content">
-        <div class="et_pb_module">
+    <!-- Image with Centered Heading -->
+    <div class="image-container">
+        <img src="https://avenuefashion.be/wp-content/uploads/2024/08/Marc_Cain_FW2024_X_15.webp" alt="Fashion Image">
+        <div class="centered-heading">
             <h1>Welkom bij Avenue Fashion</h1>
             <p>Maak kennis met onze trendy en stijlvolle kleding en laat u adviseren in onze winkel.</p>
-            <img src="https://avenuefashion.be/wp-content/uploads/2024/08/Marc_Cain_FW2024_X_15.webp" alt="Fashion Image">
         </div>
+    </div>
 
+    <!-- Content Section -->
+    <section class="content">
         <div class="et_pb_module">
             <h2>Onze Collecties</h2>
             <p>Onze veelzijdige collecties zijn altijd in lijn met de laatste trends.</p>
